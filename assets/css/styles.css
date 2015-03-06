@@ -611,6 +611,16 @@ pre code {
     font-size: 18px;
   }
 }
+/* Video */
+  .video {
+    padding: 40px 0;
+    background: #17baef;
+    color: #fff;
+  }
+  .video .sub-title {
+    color: #074f66;
+  }
+
 /* Team */
   .team {
     padding: 40px 0;
@@ -639,3 +649,11 @@ pre code {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+
+.license .open-source {
+    height: 25%; 
+    width: 25%; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
