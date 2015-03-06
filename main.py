@@ -13,10 +13,10 @@ GPIO.setup(26, GPIO.OUT) # Green
 GPIO.setup(19, GPIO.OUT) # Amber
 GPIO.setup(13, GPIO.OUT) # Red
 
-ambient = "Forest.mp3"
-red = "Red.mp3"
-amber = "Amber.mp3"
-green = "Green.mp3"
+ambient = "sounds/forest.mp3"
+red = "sounds/red.mp3"
+amber = "sounds/amber.mp3"
+green = "sounds/green.mp3"
 
 Running = True
 
