@@ -25,7 +25,6 @@ green = "sounds/green.mp3"
 Running = True
 
 def run(PORT):
-
     Handler = http.server.CGIHTTPRequestHandler
 
     httpd = socketserver.TCPServer(("", PORT), Handler)
