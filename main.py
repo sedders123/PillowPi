@@ -2,6 +2,8 @@ import RPi.GPIO as GPIO
 from time import sleep
 import pygame.mixer
 import pygame.mixer_music
+import http.server
+import socketserver
 
 GPIO.setmode(GPIO.BCM)
 
@@ -13,12 +15,23 @@ GPIO.setup(26, GPIO.OUT) # Green
 GPIO.setup(19, GPIO.OUT) # Amber
 GPIO.setup(13, GPIO.OUT) # Red
 
+PORT = 80
+
 ambient = "sounds/forest.mp3"
 red = "sounds/red.mp3"
 amber = "sounds/amber.mp3"
 green = "sounds/green.mp3"
 
 Running = True
+
+def run(PORT):
+
+    Handler = http.server.CGIHTTPRequestHandler
+
+    httpd = socketserver.TCPServer(("", PORT), Handler)
+
+    print("serving at port", PORT)
+    httpd.serve_forever()
 
 def sound_init():
     pygame.mixer.init(frequency=22050, size=-16, channels=2, buffer=4096)
