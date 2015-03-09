@@ -6,6 +6,7 @@ The offical website can be found here: http://sedders123.github.io/PillowPi/
 The offical blog/build guide can be found here: http://collyersstudentraspberrypi.blogspot.co.uk/
 
 ---Instructions---
+
 Place the cgi-bin folder inside /var/www/
 
 Extract other files in directory of your choice
