@@ -1,0 +1,137 @@
+/*   
+ * Template Name: devAid - Responsive Website Template for developers
+ * Version: 1.0
+ * Author: Xiaoying Riley at 3rd Wave Media
+ * Website: http://themes.3rdwavemedia.com/
+ * Twitter: @3rdwave_themes
+*/
+/* Default */
+/* ======= Base ======= */
+body {
+  font-family: 'Lato', arial, sans-serif;
+  color: #444444;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #17baef;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #074f66;;
+}
+a {
+  color: #0a7396;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #074f66;
+}
+.btn,
+a.btn {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  font-family: 'Montserrat', arial, sans-serif;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+.btn .fa,
+a.btn .fa {
+  margin-right: 5px;
+}
+.btn:focus,
+a.btn:focus {
+  color: #fff;
+}
+a.btn-cta-primary,
+.btn-cta-primary {
+  background: #074f66;
+  border: 1px solid #074f66;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+a.btn-cta-primary:hover,
+.btn-cta-primary:hover {
+  background: #053c4e;
+  border: 1px solid #053c4e;
+  color: #fff;
+}
+a.btn-cta-secondary,
+.btn-cta-secondary {
+  background: #eebf3f;
+  border: 1px solid #eebf3f;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+a.btn-cta-secondary:hover,
+.btn-cta-secondary:hover {
+  background: #ecb728;
+  border: 1px solid #ecb728;
+  color: #fff;
+}
+.text-highlight {
+  color: #074f66;
+}
+.offset-header {
+  padding-top: 90px;
+}
+pre code {
+  font-size: 16px;
+}
+
+.title {
+  font-size: 98px;
+  color: #074f66;
+  margin-top: 0;
+}
+.title .highlight {
+  color: #eebf3f;
+}
+.circle-green{
+	border-radius: 50%;
+	display: block;
+    width: 75%;
+    height:0;
+    padding-bottom: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #75FF55;
+}
+.circle-amber{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FF8F31;
+}
+.circle-red{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FF362B;
+}
+.circle-green div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
