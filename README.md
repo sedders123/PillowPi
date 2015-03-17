@@ -1,6 +1,7 @@
 # PillowPi
 
 [![Join the chat at https://gitter.im/sedders123/PillowPi](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sedders123/PillowPi?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The Pillow Pi is a tool that allows users to get a bettter nights sleep by monitorig room conditions such as brightness and temperature. The core component of the Pillow Pi is the [Rasberry Pi computer](http://www.raspberrypi.org/). The Pillow Pi was devloped as an entry for PA Consulting's [Raspberry Pi Competition](http://www.paconsulting.com/events/pas-new-raspberry-pi-competition-for-2014-15/).
 
 The offical website can be found here: http://sedders123.github.io/PillowPi/
