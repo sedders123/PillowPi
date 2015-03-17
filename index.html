@@ -124,7 +124,7 @@
     <section id="about" class="about section">
         <div class="container">
             <h2 class="title text-center">What is the Pillow Pi?</h2>
-            <p class="intro text-center">The Pillow Pi is a tool that allows users to get a better nights sleep by monitoring room conditions such as brightness and temperature. The core component of the Pillow Pi is the <a href="http://www.raspberrypi.org/" title="Raspberry Pi Foundation" target="_blank">Rasberry Pi computer</a>. The Pillow Pi was developed as an entry for PA Consulting's <a href="http://www.paconsulting.com/events/pas-new-raspberry-pi-competition-for-2014-15/" title="PA Consulting's Website" target="_blank">Raspberry Pi Competition</a>.</p>
+            <p class="intro text-center">The Pillow Pi is a device that allows users to get a better nights sleep by monitoring room conditions such as brightness and temperature. The core component of the Pillow Pi is the <a href="http://www.raspberrypi.org/" title="Raspberry Pi Foundation" target="_blank">Rasberry Pi computer</a>. The Pillow Pi was developed as an entry for PA Consulting's <a href="http://www.paconsulting.com/events/pas-new-raspberry-pi-competition-for-2014-15/" title="PA Consulting's Website" target="_blank">Raspberry Pi Competition</a>.</p>
             <div class="row">
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
@@ -132,7 +132,7 @@
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Get a good night's sleep</h3>
-                        <p>A good nights sleep is vital as part of a healthy lifestyle. The PillowPi helps you to get to sleep quickly and combfortably</p>
+                        <p>A good nights sleep is vital as part of a healthy lifestyle. The PillowPi helps you to get to sleep quickly and comfortably</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
@@ -141,7 +141,7 @@
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Learn basic electronics</h3>
-                        <p>The PillowPi relies on input form electronic 'breadboards'. Learning how to set these up can help you better understand how everyday appliances work</p>
+                        <p>The PillowPi relies on input from electronic 'breadboards'. Learning how to set these up can better help you to understand how everyday appliances work</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
@@ -160,7 +160,7 @@
                     </div>
                     <div class="content">
                         <h3 class="sub-title">PillowPi is standalone</h3>
-                        <p>The PillowPi's code is standalone and the electronics require only a few GPIO pins meaning that it should be easy to intergrate into your existing projects</p>
+                        <p>The PillowPi's code is standalone and the electronics require only a few GPIO pins, meaning that it should be easy to intergrate into your existing projects</p>
                     </div><!--//content-->
                 </div><!--//item-->                
                 <div class="item col-md-4 col-sm-6 col-xs-12">
@@ -206,7 +206,7 @@
             <h2 class="title text-center">Get Started</h2>            
             <div class="block">
                 <h3 class="sub-title text-center">Updating the Pi</h3>
-                <p>When you first boot up your pi you will need to update it. You can do this by entering the following commands into the terminal</p>
+                <p>When you first boot up your Pi you will need to update it. You can do this by entering the following commands into the terminal:</p>
 
                 <div class="code-block">
                     <pre><code class="language-markup">
@@ -219,7 +219,7 @@
             
             <div class="block">
                 <h3 class="sub-title text-center">Downloading the code</h3>
-                <p>To use the PillowPi you will need to download the code. To do this you should enter the following commands into the terminal. The commands will download and unzip the code in the directory you are currently in. </p>
+                <p>To use the PillowPi you will need to download the code. To do this you should enter the following commands into the terminal. The commands will download and unzip the code to the current directory. </p>
                 
                 <div class="code-block">
                     <pre>
@@ -253,6 +253,7 @@
     </code></pre>
                 </div><!--//code-block-->
                 <p>Then look for the following line</p>
+            
                 <div class="code-block">
                     <pre>
     <code class="language-markup">
@@ -266,11 +267,49 @@
    # options snd-usb-audio index=-2
     </code></pre>
                 </div><!--//code-block-->
+                <p>Press <kbd class="light">Ctrl + O</kbd> and then <kbd class="light">Enter ↵</kbd> to save your changes then <kbd class="light">Ctrl + X</kbd> to quit. Restart the Pi and audio should now come out of the speakers</p>
+            </div><!--//block-->
+
+<div class="block">
+                <h3 class="sub-title text-center">OPTIONAL: Set up web interface</h3>
+                <p>Setting up the web interface means that you can access information on sleeping conditions from any device that connects to the internet</p>
+                <p>
+                    To get started download apache2
+    </p>
+                
+                <div class="code-block">
+                    <pre>
+    <code class="language-markup">
+   pi@raspberry:~$ sudo apt-get install apache2
+    </code></pre>
+                </div><!--//code-block-->
+                <p>When the installation has finished enable cgi scripts with the following command</p>
+                <div class="code-block">
+                    <pre>
+    <code class="language-markup">
+   pi@raspberry:~$ sudo a2enmod cgi
+    </code></pre>
+                </div><!--//code-block-->
+                <p>Next you will need to edit your site file. Open it with the following command</p>
+                <div class="code-block">
+                    <pre>
+    <code class="language-markup">
+   pi@raspberry:~$ sudo nano /etc/apache2/sites-available/000-default.conf
+    </code></pre>
+                </div><!--//code-block-->
+                <p>Next you will need to edit your site file. Open it with the following command</p>
+                <div class="code-block">
+                    <pre>
+    <code class="language-markup">
+   pi@raspberry:~$ sudo nano /etc/apache2/sites-available/000-default.conf
+    </code></pre>
+                </div><!--//code-block-->
                 <p>Press <kbd class="light">Ctrl + O</kbd> and then enter to save your changes then <kbd class="light">Ctrl + X</kbd> to quit. Restart the Pi and audio should now come out of the speakers</p>
             </div><!--//block-->
+                
             <div class="block">
                 <h3 class="sub-title text-center">Full Build Guide</h3>
-                <p>To build your own PillowPi is you will need the full instructions, including an electronic components guide, which can be found on our blog. Make sure you If you have any issues or problems feel free to contact us with the information provided below</p>
+                <p>To build your own PillowPi you will need the full instructions, including an electronic components guide, which can be found on our blog. If you have any issues or problems feel free to contact us with the links found in the <a class="scrollto" href="#contact">contact</a> section</p>
                 <p class="text-center">
                     <a class="btn btn-cta-primary" href="http://collyersstudentraspberrypi.blogspot.co.uk/" title="Blog" target="_blank">Visit Blog</a>
                 </p>
